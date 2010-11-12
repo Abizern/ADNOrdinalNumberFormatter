@@ -17,3 +17,8 @@ This is the branch to use to see how to use the formatter if an example is neede
 h3. production branch
 
 This is the branch that should be used if one wants to use git submodules to use the formatter in other projects. This will only contain the class files themselves without the Xcode project and the example code.
+
+Sometimes, there may be artifacts left over when switching from master to production. These are files that are ignored by git and are easily cleaned up by running
+
+bc. git clean -dxf 
+
