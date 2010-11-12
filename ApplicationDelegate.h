@@ -8,13 +8,11 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ApplicationDelegate : NSObject <NSApplicationDelegate> {
-    @private
+@private
     NSWindow *window;
     NSTextField *inputField;
     NSInteger number;
-    
-    
-     
+
 }
 
 @property (assign) IBOutlet NSWindow *window;
