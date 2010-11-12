@@ -1,5 +1,5 @@
 //
-//  ADNOrdinalNumberFormatterAppDelegate.m
+//  AppDelegate.m
 //  ADNOrdinalNumberFormatter
 //
 //  Created by Abizer Nasir
@@ -10,9 +10,16 @@
 @implementation ApplicationDelegate
 
 @synthesize window;
+@synthesize inputField;
+@synthesize number;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	// Insert code here to initialize your application 
+- (id)init  {	
+    if (!(self = [super init])) {
+        return nil; // Bail!
+    }
+    number = 50;	
+
+    return self;
 }
 
 @end
