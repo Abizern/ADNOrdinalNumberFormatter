@@ -28,7 +28,7 @@
     
     NSString *ordinal;
     
-    if ([strRepresentation isEqualToString:@"11"] || [strRepresentation isEqualToString:@"12"] || [strRepresentation isEqualToString:@"13"]) {
+    if ([strRepresentation hasSuffix:@"11"] || [strRepresentation hasSuffix:@"12"] || [strRepresentation hasSuffix:@"13"]) {
         ordinal = @"th";
     } else if ([lastDigit isEqualToString:@"1"]) {
         ordinal = @"st";
