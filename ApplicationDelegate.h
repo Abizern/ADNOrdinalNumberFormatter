@@ -6,12 +6,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class ADNOrdinalNumberFormatter;
 
 @interface ApplicationDelegate : NSObject <NSApplicationDelegate> {
 @private
     NSWindow *window;
     NSTextField *inputField;
     NSInteger number;
+    
+    ADNOrdinalNumberFormatter *numberFormatter;
 
 }
 
