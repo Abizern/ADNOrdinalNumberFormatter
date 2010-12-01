@@ -4,6 +4,10 @@ A simple subclass of *NSNumberFormatter* that adds an ordinal to a number. e.g. 
 
 It will also strip out any trailing text, so a number can be entered with or without an ordinal.
 
+h2. License
+
+Released under the Simplified BSD Licence. See the included LICENCE.txt file for the actual license.
+
 h2. Usage
 
 There are two braches to this repository. *master* and *production*
