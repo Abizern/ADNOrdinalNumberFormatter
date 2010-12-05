@@ -10,7 +10,7 @@ Released under the Simplified BSD Licence. See the included LICENCE.txt file for
 
 h2. Usage
 
-There are two braches to this repository. *master* and *production*
+There are two branches to this repository. *master* and *production*
 
 h3. master branch
 
@@ -22,7 +22,7 @@ h3. production branch
 
 This is the branch that should be used if one wants to use git submodules to use the formatter in other projects. This will only contain the class files themselves without the Xcode project and the example code.
 
-Sometimes, there may be artifacts left over when switching from master to production. These are files that are ignored by git and are easily cleaned up by running
+Sometimes, there may be artefacts left over when switching from master to production. These are files that are ignored by git and are easily cleaned up by running
 
 bc. git clean -dxf 
 
