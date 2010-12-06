@@ -8,21 +8,29 @@ h2. License
 
 Released under the Simplified BSD Licence. See the included LICENCE.txt file for the actual license.
 
-h2. Usage
+h2. Branch Structure
 
 There are two branches to this repository. *master* and *production*
 
 h3. master branch
 
-This branch contains the class extension files as well as an Xcode project (version 3.2 and above) that shows how to use the formatter.
-
-This is the branch to use to see how to use the formatter if an example is needed. It as also the branch that further development of the class should be performed on.
+The master branch contains the class extension files as well as an Xcode project that shows how to use the formatter. This is the branch that further development of the class should be performed on.
 
 h3. production branch
 
-This is the branch that should be used if one wants to use git submodules to use the formatter in other projects. This will only contain the class files themselves without the Xcode project and the example code.
+The production branch is the one to use if you want to use git submodules to use the formatter in other projects. This will only contain the class files themselves without the Xcode project and the example code. This is preferable as it will keep your subdirectories clear of any code that is unnecessary to your working project.
 
+Changes made to the master branch will be propagated across to the production branch so it will always remain current
+
+To add the production branch rather than the master branch as as submodule, simply use the -b flag:
+
+bc. git submodue add -b production git://github.com/Abizern/ADNOrdinalNumberFormatter.git 
+
+To keep up to date with the latest changes, `cd` into the directory that contains this submodule and pull the newest changes in as usual
+
+bc. git pull origin
+
+h3. Artefacts
 Sometimes, there may be artefacts left over when switching from master to production. These are files that are ignored by git and are easily cleaned up by running
 
 bc. git clean -dxf 
-
