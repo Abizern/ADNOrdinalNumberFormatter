@@ -31,6 +31,7 @@ To keep up to date with the latest changes, `cd` into the directory that contain
 bc. git pull origin
 
 h3. Artefacts
+
 Sometimes, there may be artefacts left over when switching from master to production. These are files that are ignored by git and are easily cleaned up by running
 
 bc. git clean -dxf 
