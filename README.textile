@@ -24,7 +24,7 @@ Changes made to the master branch will be propagated across to the production br
 
 To add the production branch rather than the master branch as as submodule, simply use the -b flag:
 
-bc. git submodue add -b production git://github.com/Abizern/ADNOrdinalNumberFormatter.git 
+bc. git submodule add -b production git://github.com/Abizern/ADNOrdinalNumberFormatter.git 
 
 To keep up to date with the latest changes, `cd` into the directory that contains this submodule and pull the newest changes in as usual
 
